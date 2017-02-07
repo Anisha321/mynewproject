@@ -1,128 +1,133 @@
 <!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+		<style>
+		body {
+				font-family: helvetica, sans-serif;
+				margin: 0 auto;
+				max-width: 800px;
+				background-color: #232323;
+		}
+		h1 {
+				font-family: 'Kaushan Script',cursive;
+				font-size: 70px;
+				text-align: center;
+				margin: 65px 0 0 0;
+				color: #1cb29b;
+		}
+		h2 {
+				font-family: Shadows Into Light;
+				font-size: 40px;
+				text-align: center;
+				margin: 0px 0 65px 0;
+				color: #29ab94;
+		}
 
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
-<style>
-body {
-  font-family: helvetica, sans-serif;
-  margin: 0 auto;
-  max-width: 800px;
-  background-color: #232323;
-}
-div {
-	height: 300px;
-	/*background-size: cover;*/																	/* Didnot apply to all the divs individually */
-	margin: 40px 0 0 0;
-	position: relative;
-	border-radius: 12px;
-	
-}
-p {
-	background: black;
-	background: linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
-	background: -webkit-linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));					/*For chrome, opera and safari*/
-	background: -moz-linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));						/*For mozilla firefox*/
-	color: rgba(255,255,255,1);
-	padding: 13px;
-	line-height: 30px;
-	text-align: justify;
-	position: absolute;
-	bottom: 0;
-	margin: 0;
-	height: 20px;
-	transition: height .5s;
-	-webkit-transition: height .5s;
-	-moz-transition: height .5s;
-}
-small {
-	opacity: 0;
-}
-.show-description p {
-	height: 150px;
-}
-.show-description small {
-	opacity: 1;
-}
-.pla1 {
-	background: url("mauritius.jpg");
-	background-size: cover;
-}
-.pla2 {
-	background: url("paris.jpg");
-	background-size: cover;
-}
-.pla3 {
-	background: url("croatia.jpg");
-	background-size: cover;
-}
-.package {
-	float: right;								/*using float property for inline elements in instead of text-align*/
-}
-h1 {
-	font-family: 'Londrina Shadow',cursive;
-	font-size: 80px;
-	text-align: center;
-	margin: 65px 0 0 0;
-	color: #1cb29b;
-}
-h2 {
-	font-family: Shadows Into Light;
-	font-size: 40px;
-	text-align: center;
-	margin: 0px 0 65px 0;
-	color: #29ab94;
-}
-@media(max-width: 500px) {
-  h1 {
-	font-size: 45px;
-	margin-top: 25px;
-	line-height: 40px;
-  }
-  h2 {
-	font-size: 20px;
-	margin-top: 20px;
-	margin-bottom: 30px;
-  }
-  div {
-	margin: 20px 15px 0 15px;
-  }
-  p{
-	font-size: 20px;
-	line-height: 22px;
-  }
-  small {
-	font-size: 14px;
-  }
-}
-</style>
+		div {
+				height: 300px;
+				/*background-size: cover;*/																	/* Didnot apply to all the divs individually */
+				margin: 40px 0 0 0;
+				position: relative;
+				border-radius: 12px;
+			
+		}
+		p {
+				background: black;
+				background: linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
+				background: -webkit-linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));					/*For chrome, opera and safari*/
+				background: -moz-linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));						/*For mozilla firefox*/
+				color: rgba(255,255,255,1);
+				padding: 13px;
+				line-height: 30px;
+				text-align: justify;
+				position: absolute;
+				bottom: 0;
+				margin: 0;
+				height: 20px;
+				transition: height .5s;
+				-webkit-transition: height .3s;
+				-moz-transition: height .3s;
+		}
+		small {
+				opacity: 0;
+		}
+		.show-description p {
+				height: 150px;
+		}
+		.show-description small {
+				opacity: 1;
+		}
+		.place1 {
+				background: url("mauritius.jpg");
+				background-size: cover;
+		}
+		.place2 {
+				background: url("paris.jpg");
+				background-size: cover;
+		}
+		.place3 {
+				background: url("croatia.jpg");
+				background-size: cover;
+		}
+		.package {
+				float: right;								/*using float property for inline elements in instead of text-align*/
+		}
 
-</head>
+		@media(max-width: 500px) {
+		  h1 {
+				font-size: 45px;
+				margin-top: 25px;
+				line-height: 40px;
+		  }
+		  h2 {
+				font-size: 20px;
+				margin-top: 20px;
+				margin-bottom: 30px;
+		  }
+		  div {
+				margin: 20px 15px 0 15px;
+								
+		  }
+		  p{
+				font-size: 12px;
+				line-height: 10px;
+		  }
+		  small {
+				font-size: 9px;
+		  }
+		}
+		</style>
 
-<body>
-<h1>Wanderlust Whereabouts!</h1>
-<h2>The Traveller's Paradise</h2>
-<div class="pla1">
+	</head>
 
-<p>Mauritius <span class=package>$1339.19</span><br />
-<small>Mauritius, an Indian Ocean island nation, is known for its beaches, lagoons and reefs. The mountainous interior includes Black River Gorges National Park, with rainforests, waterfalls, hiking trails and wildlife like the flying fox. Capital Port Louis has sites such as the Champs de Mars horse track, Eureka plantation house and 18th-century Sir Seewoosagur Ramgoolam Botanical Gardens.</small></p>
-</div>
-<div class="pla2">
+	<body>
+		<h1>Wanderlust Whereabouts!</h1>
+		<h2>The Traveller's Paradise</h2>
 
-<p>Paris<span class=package>$1264.79</span><br />
-<small>Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré.</small></p>
-</div>
-<div class="pla3">
+		<div class="place1">
+			<p>Mauritius <span class=package>$1339.19</span><br />
+			<small>Mauritius, an Indian Ocean island nation, is known for its beaches, lagoons and reefs. The mountainous interior includes Black River Gorges National Park, with rainforests, waterfalls, hiking trails and wildlife like the flying fox. Capital Port Louis has sites such as the Champs de Mars horse track, Eureka plantation house and 18th-century Sir Seewoosagur Ramgoolam Botanical Gardens.</small></p>
+		</div>
 
-<p>Croatia<span class=package>$1041.59</span><br />
-<small>Croatia is an Eastern European country with a long coastline on the Adriatic Sea. Encompassing more than a thousand islands, it's also crossed by the Dinaric Alps. Its inland capital, Zagreb, is distinguished by its medieval Gornji Grad (Upper Town) and diverse museums. The major coastal city Dubrovnik has massive 16th-century walls encircling an Old Town with Gothic and Renaissance buildings.</small></p>
-</div>
-<script>
-	/*alert("javascript works");*/
-	$('div').on('click',function(){
-		$(this).toggleClass('show-description');
-	});
-</script>
+		<div class="place2">
+			<p>Paris<span class=package>$1264.79</span><br />
+			<small>Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré.</small></p>
+		</div>
 
-</body>
+		<div class="place3">
+			<p>Croatia<span class=package>$1041.59</span><br />
+			<small>Croatia is an Eastern European country with a long coastline on the Adriatic Sea. Encompassing more than a thousand islands, it's also crossed by the Dinaric Alps. Its inland capital, Zagreb, is distinguished by its medieval Gornji Grad (Upper Town) and diverse museums. The major coastal city Dubrovnik has massive 16th-century walls encircling an Old Town with Gothic and Renaissance buildings.</small></p>
+		</div>
+
+		<script>
+			/*alert("javascript works");*/
+			$('div').on('click',function(){
+				$(this).toggleClass('show-description');
+			});
+		</script>
+
+	</body>
+</html>
